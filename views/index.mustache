@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Food!</title>
+    <link rel="stylesheet" href="/main.css">
+  </head>
+  <body>
+    <main id="wrapper">
+      {{#recipes}}
+      <div id="recipes">
+        {{#thumbnail}}
+        <img src="{{thumbnail}}">
+        {{/thumbnail}}
+        {{^thumbnail}}
+        <img src="http://www.fillmurray.com/100/100">
+        {{/thumbnail}}
+        <h1>{{title}}</h1>
+        <h2>Ingredients</h2>
+        {{#ingredients}}
+        <ul>
+          <li>{{.}}</li>
+        </ul>
+        {{/ingredients}}
+      </div>
+      {{/recipes}}
+    </main>
+  </body>
+</html>

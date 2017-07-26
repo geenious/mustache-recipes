@@ -1,0 +1,9 @@
+#wrapper {
+  width: 90%;
+}
+
+#recipes {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid lightgrey;
+}
